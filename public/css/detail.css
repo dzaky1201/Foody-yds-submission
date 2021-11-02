@@ -1,0 +1,37 @@
+.back a {
+    padding: 10px 18px;
+    background-color: #e46000;
+    border-radius: 15px;
+    font-size: 30px;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline;
+}
+
+.back {
+    margin-top: 50px;
+}
+
+.left {
+    margin-top: 100px;
+}
+
+.left img {
+    width: 551px;
+    height: 300px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.h1 {
+    display: block;
+}
+
+.category {
+    padding: 5px 18px;
+    background-color: #e46000;
+    border-radius: 15px;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline;
+}

@@ -20,4 +20,16 @@ Route::get('/', function () {
 Route::get('/home', function () {
     $data = Food::$foodData;
     return view('home')->with('foodData', $data);
-});
+})->name('home');
+
+Route::get('/detail/{id}', function ($id) {
+    $food = [];
+    $foodItem = Food::$foodData;
+    foreach ($foodItem as $item) {
+        if ($item['id'] == $id) {
+            $food = $item;
+            break;
+        }
+    }
+    return view('detail')->with('food', $food);
+})->name('detail_food');

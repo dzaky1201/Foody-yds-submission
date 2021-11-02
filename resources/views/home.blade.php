@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
-</head>
-<body>
+<x-main>
     <section class="section-header">
         <img class="logo" src="img/logo.png" alt="logo">
         <a href="#">Contact</a>
@@ -27,16 +18,15 @@
     <section class="catalog" id="catalog">
         <div class="wrap">
             @foreach ($foodData as $item)
-            <div class="card">
+            <div class="card" onclick="location.href='{{route('detail_food', $item['id'])}}';">
                 <img src="{{$item['picture_url']}}" alt="food">
                 <div class="desc">
                     <h3>{{$item['title']}}</h3>
-                    <h3>Rp.{{$item['base_price']}}</h3>
+                    <h3 class="harga">Rp.{{$item['base_price']}}</h3>
                 </div>
             </div>
             @endforeach
-           
+
         </div>
-    </div>
-</body>
-</html>
+        </div>
+</x-main>

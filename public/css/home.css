@@ -113,3 +113,7 @@ h1 {
     margin-top: 10px;
     font-size: 24px;
 }
+
+.harga {
+    color: rgba(0, 0, 0, 0.5);
+}
